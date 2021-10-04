@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Form - FantacyDesigns</title>
+    <link rel="stylesheet" href="assets/css/estiloformulario.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+        <div class="container-fluid">
+          <img src="assets/img/logo.jpg" alt="" width="200">   <!-- Logo -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active text-white " aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white href="#">Pack de verano</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white " href="#">acerca de</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white " href="#">registro</a>
+              </li>            
+              <li class="nav-item">
+                <a class="nav-link text-white " href="#">inicia sesión</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white " href="contacto.html">contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <div class="contact-section">
+      <div class="inner-width">
+        <h1>CONTÁCTAME</h1>
+        <form action="https://formspree.io/f/xvodyzov" method="POST" >
+            <label><input type="text" name="nombre"  class="name" placeholder="Tu nombre" required></label>
+            <label><input type="email" name="correo" class="email" placeholder="Tu correo" required></label>
+            <label><input type="tel" name="telefono" class="telefono" placeholder="Tu teléfono" size="20" maxlength="10" required></label>
+            <textarea rows="1" name="mensaje" class="message" placeholder="Mensaje" required></textarea>
+            <input type="submit" value="enviar" class="enviar"> 
+        </form>
+      </div>
+        </div>
+  </body>
+</html>
